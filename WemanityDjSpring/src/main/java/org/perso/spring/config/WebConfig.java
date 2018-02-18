@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages= {"org.formation.spring"})
+@ComponentScan(basePackages= {"org.perso.spring"})
 @Import({ApplicationConfig.class})
 @PropertySource({"classpath:application.properties"})
 public class WebConfig extends WebMvcConfigurerAdapter {

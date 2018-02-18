@@ -1,5 +1,11 @@
 package org.perso.spring.model;
 
+import javax.persistence.Embeddable;
+
+import org.springframework.stereotype.Component;
+
+@Component
+@Embeddable
 public class Loisir {
 
 	private String loisir;
@@ -9,6 +15,11 @@ public class Loisir {
 		super();
 		this.loisir = loisir;
 		this.date = date;
+	}
+
+	public Loisir(String loisir) {
+		super();
+		this.loisir = loisir;
 	}
 
 	public Loisir() {

@@ -56,6 +56,7 @@ public class ApplicationConfig {
 		emf.setDataSource(dataSource());
 		emf.setJpaVendorAdapter(jpaVendorAdaptater());
 		emf.setPackagesToScan("org.perso.spring.model");
+		
 		Properties jpaProperties = new Properties();
 		emf.setJpaProperties(jpaProperties);
 		return emf;
